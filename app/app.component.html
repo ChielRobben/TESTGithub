@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to The {{ title }} Gang!
+  </h1>
+</div>
+<div>
+
+    <mat-grid-list cols="3" style="margin-top: -214px !important; ">
+        <mat-grid-tile></mat-grid-tile>
+        <mat-grid-tile id="menuBar">
+            <button routerLink='' mat-button>Home</button>
+
+            <button routerLink='/Posse' mat-button>Posse</button>
+
+            <button routerLink='/Rules' mat-button>Rules</button>
+
+            <button routerLink='/Prospects' mat-button>Prospect</button>
+
+            <button routerLink='/Events' mat-button>Events</button>
+
+            <button routerLink='/Members' mat-button>Members</button>
+
+            <button routerLink='/Contact' mat-button>Contact</button>
+
+        </mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+      </mat-grid-list>
+      <mat-divider style="margin-top: -12em !important;"></mat-divider>
+
+      <mat-card>
+        <router-outlet></router-outlet>
+      </mat-card>
+      
+ 
+</div>
